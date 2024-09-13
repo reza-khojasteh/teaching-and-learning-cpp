@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
 	//create variables of different types
+	bool b = true;
 	char c = 'a';
 	short s = 1;
 	int i = 0;
@@ -13,6 +14,7 @@ int main() {
 	long double ld = 6.0;
 
 	//print the sizes of the variables
+	cout << "size of bool: " << sizeof(b) << endl;
 	cout << "size of char: " << sizeof(c) << endl;
 	cout << "size of short: " << sizeof(s) << endl;
 	cout << "size of int: " << sizeof(i) << endl;
@@ -21,8 +23,10 @@ int main() {
 	cout << "size of float: " << sizeof(f) << endl;
 	cout << "size of double: " << sizeof(d) << endl;
 	cout << "size of long double: " << sizeof(ld) << endl;
+	cout << endl;
 
 	//print the values of the variables
+	cout << "value of bool: " << b << endl;
 	cout << "value of char: " << c << endl;
 	cout << "value of short: " << s << endl;
 	cout << "value of int: " << i << endl;
@@ -31,6 +35,7 @@ int main() {
 	cout << "value of float: " << f << endl;
 	cout << "value of double: " << d << endl;
 	cout << "value of long double: " << ld << endl;
+	cout << endl;
 
 	//create a boolean variable
 	bool flag = false;
@@ -54,7 +59,7 @@ int main() {
 	flag = 0;
 	cout << flag << endl;
 
-	flag = 1234;
+	flag = -1234;
 	cout << flag << endl;
 
 	return 0;
