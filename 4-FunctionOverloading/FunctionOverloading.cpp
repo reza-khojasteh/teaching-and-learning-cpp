@@ -3,13 +3,14 @@ using namespace std;
 
 // size_t is an unsigned integral type which is defined in various header files such as 
 // <cstddef>, <cstdio>, <cstdlib>, <cstring>, <ctime>, <cwchar>, <cwctype> etc.
-// It's size is platform dependent, but it's guaranteed to be big enough to contain the size of the biggest object your system can handle.
+// It's size is platform dependent, but it's guaranteed to be big enough to contain 
+// the size of the biggest object your system can handle.
 void print(char, size_t);
 void print(size_t, char);
 void print(char);
 void print();
 //problematic because of the conflict with the other print function
-//void line(size_t);
+//void print(size_t);
 
 
 int main() {
