@@ -4,7 +4,7 @@ using namespace std;
 // This function takes a reference to an integer and prints it out.
 // It then increments the value of the integer that is one memory address away from the reference.
 void foo(int& x) {
-	cout << x << endl;;
+	cout << x << endl;
 
 	// This line increments the value of the integer that is one memory address away from the reference.
 	*(&x + 1) = 4;
