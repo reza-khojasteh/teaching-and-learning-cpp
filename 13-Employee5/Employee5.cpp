@@ -11,6 +11,10 @@ namespace seneca {
 	// If we don't declare a constructor in the class definition, 
 	// the compiler inserts a default no-argument constructor with an empty body 
 	// which leaves the instance variables uninitialized!
+	// Note that if our class has the prototype for a constructor with some parameters 
+	// but does not include the prototype for a no-argument (default) constructor, 
+	// the compiler does not add an empty body, no-argument (default) constructor.
+	// The compiler only inserts such thing if the class has not declared any constructors.
 	Employee::Employee() {
 		m_ID = 0;
 		m_fName[0] = '\0';
