@@ -13,6 +13,9 @@ int main() {
 
 	employee1.print();
 	// Now, use the cast operator overload to create an Employee object from a long value.
+	// C++ compilers create temporary objects in a variety of situations.
+	// A temporary object down there, "(Employee)987654321", has no name and is destroyed 
+	// as the last step in evaluating the expression that contains its creation point.
 	employee2 = (Employee)987654321;
 	// We can also say:
 	//employee2 = 987654321;
