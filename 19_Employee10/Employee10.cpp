@@ -63,7 +63,8 @@ namespace seneca {
 		// OR this->operator++();
 		// OR ++this->m_noOfHoursWorked;
 		// OR this->m_noOfHoursWorked++;
-		// OR ++(*this) - Just simply call the prefix operator
+		// OR just simply call the prefix operator as:
+		// ++(*this);
 		// Return the copy of the object before the incrementation
 		return copy;
 	}
