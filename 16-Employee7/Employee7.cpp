@@ -46,6 +46,9 @@ namespace seneca {
 		Employee temp(m_ID, m_fName, m_lName);
 		// Check if the current object is empty or not 
 		// (leaves the current object unchanged if the temporary object is empty)
+		// Also note that since the temporary object(temp) 
+		// and the current object are instances of the same class, 
+		// this member function can access each object's instance variables directly.
 		if (temp.m_ID == 0 && temp.m_fName[0] == '\0' && temp.m_lName[0] == '\0')
 			// To copy the values of the instance variables of one object 
 			// into those of the current object, we dereference *this 
