@@ -25,4 +25,8 @@ namespace seneca {
 		// But we can access them through the public member functions (interfaces), like:
 		emp.print();
 	}
+
+	void setEmployee(Employee& emp, long id, const char* fName, const char* lName) {
+		emp.set(id, fName, lName);
+	}
 }

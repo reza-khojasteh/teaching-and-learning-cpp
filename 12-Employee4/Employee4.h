@@ -21,8 +21,16 @@ namespace seneca {
 		void print() const;
 	};
 
-	// Let's assume this time, we have another function 
-	// that is not a member of the class and receives an Employee object reference
+	// Let's assume this time, we have other function 
+	// that are not members of the class.
+
+	// The first one is a function that prints the information of an Employee object
+	// and receives a const Employee object reference which means that the function
+	// can't change the object through the reference.
 	void printEmployee(const Employee&);
+	// The second one is a function that sets the information of an Employee object
+	// and receives an Employee object reference which means that the function
+	// can change the object through the reference.
+	void setEmployee(Employee&, long, const char*, const char*);
 }
 #endif // !SENECA_EMPLOYEE1_H_

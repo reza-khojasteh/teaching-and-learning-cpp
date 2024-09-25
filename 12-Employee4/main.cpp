@@ -13,6 +13,7 @@ int main() {
 
 	// Call the printEmployee function to display the information of the employee1 object
 	printEmployee(employee1);
-
+	setEmployee(employee2, 123456789, "Jannet", "Doe");
+	printEmployee(employee2);
 	return 0;
 }
