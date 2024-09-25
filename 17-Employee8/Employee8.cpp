@@ -34,7 +34,6 @@ namespace seneca {
 		m_noOfHoursWorked = noOfHoursWorked;
 	}
 
-	// Just a bit of change in the print function to return a const reference to the object
 	const Employee& Employee::print() const {
 		if (m_ID == 0 && m_fName[0] == '\0' && m_lName[0] == '\0' && m_noOfHoursWorked == 0)
 			cout << endl << "Employee object is empty" << endl;
@@ -43,7 +42,6 @@ namespace seneca {
 			<< "Employee Name: " << m_fName << " " << m_lName << endl
 			<< "Has worked for " << m_noOfHoursWorked << " hours." << endl;
 
-		// Return a reference to the object
 		return *this;
 	}
 
