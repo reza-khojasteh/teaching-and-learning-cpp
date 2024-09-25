@@ -14,6 +14,11 @@ namespace seneca {
 		// in terms of a single-argument constructor. 
 		// This overloaded constructor defines the rule for casting a value of its parameter type 
 		// to the class type, as well as constructing an object from an argument of the parameter type.
+		// To prohibit the compiler from using a single-argument constructor 
+		// for any implicit conversion, we declare that constructor "explicit" as:
+		//explicit Employee(long);
+		// With such a declaration, the statement "employee2 = 987654321;" in "main.cpp"
+		// would generate a compiler error.
 		Employee(long);
 		Employee(long, const char*, const char*, int);
 		// Setter function
