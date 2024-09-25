@@ -51,7 +51,8 @@ namespace seneca {
 
 	// The following destructor is called when the object goes out of scope
 	// The destructor is called automatically when the object goes out of scope
-	// If we don't declare a destructor in the class definition, the compiler inserts a destructor with an empty body!
+	// If we don't declare a destructor in the class definition, 
+	// the compiler inserts a destructor with an empty body!
 	Employee::~Employee() {
 		// Just for logging/tracing purposes, we can print a message to the console
 		cout << endl << "Employee object with ID: " << m_ID << " is destroyed.";
