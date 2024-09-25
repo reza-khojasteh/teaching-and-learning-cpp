@@ -64,7 +64,6 @@ namespace seneca {
 		return copy;
 	}
 
-	// A type conversion operator overload: operator bool() const;
 	Employee::operator bool() const {
 		return m_ID != 0 && m_fName[0] != '\0' && m_lName[0] != '\0' && m_noOfHoursWorked != 0;
 	}
