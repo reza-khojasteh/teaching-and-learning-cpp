@@ -12,7 +12,7 @@ namespace seneca {
 		//m_fName[0] = '\0';
 		//m_lName[0] = '\0';
 		//m_noOfHoursWorked = 0;
-		// OR instead we can use the default constructor like:
+		// OR instead we can use the 4-args constructor like:
 		*this = Employee(0, "", "", 0);
 		// This is called "Localizing Constructor Logic" and it is a good practice.
 		// We can use temporary objects to access validation logic localized within one
@@ -25,7 +25,7 @@ namespace seneca {
 		//m_fName[0] = '\0';
 		//m_lName[0] = '\0';
 		//m_noOfHoursWorked = 0;
-		// OR instead we can use the default constructor like:
+		// OR instead we can use the 4-args constructor like:
 		*this = Employee(id, "", "", 0);
 		// (with the same description as above...) 
 	}
