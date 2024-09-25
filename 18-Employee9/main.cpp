@@ -7,8 +7,8 @@ int main() {
 	Employee employee1 = Employee(123456789, "John", "Doe", 12);
 	employee1.print();
 	// Add an hour to the number of hours worked by employee1
-	// The operator+= overload will be called
-	// Note the way the operator is called: employee1.operator+=(1);
+	// The operator++ overload will be called
+	// Note the way the operator is called: employee1.operator++();
 	// Parantheses are necessary because of the precedence of the operators
 	(++employee1).print();
 
