@@ -8,9 +8,9 @@ using namespace std;
 
 namespace seneca {
 	Employee::Employee(/*Employee* this*/) {
-		// 'this' is a pointer to the object that is being created
+		// 'this' is a pointer to the current object.
 		// We can use 'this' to access the members of the object (not necessary in this case)
-		this->m_ID = 0; // Or (*this).m_ID = 0; OR m_ID = 0;
+		this->m_ID = 0; // OR (*this).m_ID = 0; OR m_ID = 0;
 		this->m_fName[0] = '\0';
 		this->m_lName[0] = '\0';
 		// Just for logging/tracing purposes, we can print a message to the console
@@ -33,7 +33,7 @@ namespace seneca {
 		strcpy(this->m_lName, lName);
 	}
 
-	// ........................
+	// Note that it will be mandatory to use 'this' if we had (wrongly) named our paramaters as:
 	//void Employee::set(/*Employee* this, */long m_ID, const char* m_fName, const char* m_lName) {
 	//	// We can use 'this' to access the members of the object (not necessary in this case)
 	//	this->m_ID = m_ID;

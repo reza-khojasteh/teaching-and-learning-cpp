@@ -8,7 +8,8 @@ namespace seneca {
 		char m_lName[41]{};
 	public:
 		// Constructors
-		Employee(/*Employee* this*/);
+		Employee(/*Employee* this*/); // It's actually Employee(Employee* const this), 
+		// because 'this' is a constant pointer but we don't have to get this deep for now...
 		Employee(/*Employee* this, */long, const char*, const char*);
 		// Setter and getter/query functions
 		void set(/*Employee* this, */long, const char*, const char*);
