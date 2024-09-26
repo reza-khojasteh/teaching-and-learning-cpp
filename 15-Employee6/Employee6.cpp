@@ -7,17 +7,17 @@ using namespace std;
 #include "Employee6.h"
 
 namespace seneca {
-	Employee::Employee() {
+	Employee::Employee(/*Employee* this*/) {
 		// 'this' is a pointer to the object that is being created
 		// We can use 'this' to access the members of the object (not necessary in this case)
-		this->m_ID = 0; // Or (*this).m_ID = 0;
+		this->m_ID = 0; // Or (*this).m_ID = 0; OR m_ID = 0;
 		this->m_fName[0] = '\0';
 		this->m_lName[0] = '\0';
 		// Just for logging/tracing purposes, we can print a message to the console
 		cout << endl << "Employee object with ID: " << this->m_ID << " is created.";
 	}
 
-	Employee::Employee(long id, const char* fName, const char* lName) {
+	Employee::Employee(/*Employee* this, */long id, const char* fName, const char* lName) {
 		// We can use 'this' to access the members of the object (not necessary in this case)
 		this->m_ID = id;
 		strcpy(this->m_fName, fName);
@@ -26,14 +26,22 @@ namespace seneca {
 		cout << endl << "Employee object with ID: " << this->m_ID << " is created.";
 	}
 
-	void Employee::set(long id, const char* fName, const char* lName) {
+	void Employee::set(/*Employee* this, */long id, const char* fName, const char* lName) {
 		// We can use 'this' to access the members of the object (not necessary in this case)
 		this->m_ID = id;
 		strcpy(this->m_fName, fName);
 		strcpy(this->m_lName, lName);
 	}
 
-	void Employee::print() const {
+	// ........................
+	//void Employee::set(/*Employee* this, */long m_ID, const char* m_fName, const char* m_lName) {
+	//	// We can use 'this' to access the members of the object (not necessary in this case)
+	//	this->m_ID = m_ID;
+	//	strcpy(this->m_fName, m_fName);
+	//	strcpy(this->m_lName, m_lName);
+	//}
+
+	void Employee::print(/*Employee* this*/) const {
 		// Validation checking in the print function to avoid printing an empty object
 		// We can use 'this' to access the members of the object (not necessary in this case)
 		if (this->m_ID == 0 && this->m_fName[0] == '\0' && this->m_lName[0] == '\0') {
@@ -45,7 +53,7 @@ namespace seneca {
 			<< "Employee Name: " << this->m_fName << " " << this->m_lName << endl;
 	}
 
-	Employee::~Employee() {
+	Employee::~Employee(/*Employee* this*/) {
 		// Just for logging/tracing purposes, we can print a message to the console
 		// We can use 'this' to access the members of the object (not necessary in this case)
 		cout << endl << "Employee object with ID: " << this->m_ID << " is destroyed.";

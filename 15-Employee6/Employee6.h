@@ -8,13 +8,13 @@ namespace seneca {
 		char m_lName[41]{};
 	public:
 		// Constructors
-		Employee();
-		Employee(long, const char*, const char*);
+		Employee(/*Employee* this*/);
+		Employee(/*Employee* this, */long, const char*, const char*);
 		// Setter and getter/query functions
-		void set(long, const char*, const char*);
-		void print() const;
+		void set(/*Employee* this, */long, const char*, const char*);
+		void print(/*Employee* this*/) const;
 		// Destructor
-		~Employee();
+		~Employee(/*Employee* this*/);
 	};
 }
 #endif // !SENECA_EMPLOYEE1_H_
