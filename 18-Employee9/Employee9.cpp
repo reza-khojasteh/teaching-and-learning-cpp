@@ -31,8 +31,8 @@ namespace seneca {
 	const Employee& Employee::print() const {
 		if (m_ID == 0 && m_fName[0] == '\0' && m_lName[0] == '\0' && m_noOfHoursWorked == 0)
 			cout << endl << "Employee object is empty" << endl;
-
-		cout << endl << "Employee ID: " << m_ID << endl
+		else
+			cout << endl << "Employee ID: " << m_ID << endl
 			<< "Employee Name: " << m_fName << " " << m_lName << endl
 			<< "Has worked for " << m_noOfHoursWorked << " hours." << endl;
 
