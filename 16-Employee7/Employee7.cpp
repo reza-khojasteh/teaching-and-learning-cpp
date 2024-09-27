@@ -34,7 +34,7 @@ namespace seneca {
 	// using the values entered by the user
 	void Employee::set()
 	{
-		cout << endl << endl 
+		cout << endl << endl
 			<< "Testing the use of 'this' pointer in a setter function..." << endl;
 		cout << "Enter the employee ID: " << endl;
 		cin >> m_ID;
@@ -57,28 +57,29 @@ namespace seneca {
 	}
 
 	// Just a bit of change in the print function to return a copy of the object
-	Employee Employee::print() const {
-		if (m_ID == 0 && m_fName[0] == '\0' && m_lName[0] == '\0')
-			cout << endl << "Employee object is empty" << endl;
-
-		cout << endl << "Employee ID: " << m_ID << endl
-			<< "Employee Name: " << m_fName << " " << m_lName << endl;
-
-		// Return a copy of the object
-		return *this;
-	}
-
-	// Just a bit of change in the print function to return a const reference to the object
-	//const Employee& Employee::print() const {
+	//Employee Employee::print() const {
 	//	if (m_ID == 0 && m_fName[0] == '\0' && m_lName[0] == '\0')
 	//		cout << endl << "Employee object is empty" << endl;
-
-	//	cout << endl << "Employee ID: " << m_ID << endl
+	//	else
+	//		cout << endl << "Employee ID: " << m_ID << endl
 	//		<< "Employee Name: " << m_fName << " " << m_lName << endl;
 
-	//	// Return a reference to the object
+	//	// Return a copy of the object
 	//	return *this;
 	//}
+
+	// Just a bit of change in the print function to return a const reference to the object
+	// not a copy of the object (temporary object)
+	const Employee& Employee::print() const {
+		if (m_ID == 0 && m_fName[0] == '\0' && m_lName[0] == '\0')
+			cout << endl << "Employee object is empty" << endl;
+		else
+			cout << endl << "Employee ID: " << m_ID << endl
+			<< "Employee Name: " << m_fName << " " << m_lName << endl;
+
+		// Return a reference to the object
+		return *this;
+	}
 
 	// And a bit of change in the destructor to print an endl at the end...
 	Employee::~Employee() {
