@@ -76,6 +76,7 @@ namespace seneca {
 		return m_ID != 0 && m_fName[0] != '\0' && m_lName[0] != '\0' && m_noOfHoursWorked != 0;
 	}
 
+	// A free helper function that compares two Employee objects based on their data members.
 	bool areTheSame(const Employee& emp1, const Employee& emp2) {
 		return emp1.getID() == emp2.getID() && strcmp(emp1.getFName(), emp2.getFName()) == 0 && 
 			strcmp(emp1.getLName(), emp2.getLName()) == 0 && emp1.getNoOfHoursWorked() == emp2.getNoOfHoursWorked();

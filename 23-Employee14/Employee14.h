@@ -41,6 +41,8 @@ namespace seneca {
 	// from the public member functions of the class that it supports.
 	// A free helper function does not require access to the private members of its class.
 	// The coupling between a free helper function and its class is minimal, which is an ideal design solution.
+	// Note that this might lead to "class bloat" because if we add new member variables to the class,
+	// we have to add new member functions to support the helper function!
 	bool areTheSame(const Employee&, const Employee&);
 }
 #endif // !SENECA_EMPLOYEE1_H_
