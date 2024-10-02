@@ -82,8 +82,7 @@ namespace seneca {
 	//		strcmp(emp1.getLName(), emp2.getLName()) == 0 && emp1.getNoOfHoursWorked() == emp2.getNoOfHoursWorked();
 	//}
 	// we want to use a friend function to overload the operator==.
-	// Note that a friend function is not a member function and
-	// we do not use the keyword 'friend' to the function definition.
+	// Note that a friend function is not a member function and we do not use the keyword 'friend' to the function definition.
 	// Also, note that friendship pierces encapsulation, and a class can grant another class access to its private members.
 	bool operator==(const Employee& emp1, const Employee& emp2) {
 		return emp1.m_ID == emp2.m_ID && strcmp(emp1.m_fName, emp2.m_fName) == 0 &&
