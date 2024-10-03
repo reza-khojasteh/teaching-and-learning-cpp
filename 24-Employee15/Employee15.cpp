@@ -37,11 +37,12 @@ namespace seneca {
 		m_noOfHoursWorked = noOfHoursWorked;
 	}
 
-	void Employee::set(long id, const char* fName, const char* lName, int noOfHoursWorked) {
+	Employee& Employee::set(long id, const char* fName, const char* lName, int noOfHoursWorked) {
 		m_ID = id;
 		strcpy(m_fName, fName);
 		strcpy(m_lName, lName);
 		m_noOfHoursWorked = noOfHoursWorked;
+		return *this;
 	}
 
 	const Employee& Employee::print() const {

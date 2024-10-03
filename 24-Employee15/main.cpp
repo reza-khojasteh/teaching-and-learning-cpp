@@ -16,6 +16,7 @@ int main() {
 
 	Employee employee3 = employee1 + 10;
 	employee3.print();
+	// Note that instead of the above two lines, you could have also said: (employee1 + 10).print();
 
 	Employee employee4 = 10 + employee1;
 	employee4.print();

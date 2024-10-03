@@ -14,7 +14,7 @@ namespace seneca {
 		Employee(long, const char*, const char*, int);
 		// Setter/mutator/modifier function (at the time we have one, but could be more!
 		// Also, we have not done any validation on the data so far, but we should in a real-world application.)
-		void set(long, const char*, const char*, int);
+		Employee& set(long, const char*, const char*, int);
 		// Getter/query/accessor function (we are adding all possible queries for our class this time,
 		// because we need them to support the helper function down there.)
 		const Employee& print() const;
