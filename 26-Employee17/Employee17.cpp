@@ -66,7 +66,9 @@ namespace seneca {
 	// The assignment operator overload is called when an object is passed by reference to a function.
 	// The assignment operator overload is called when an object is returned by reference from a function.
 	Employee& Employee::operator=(const Employee& src) {
-		// 1. check for self-assignment (and NOTHING else)
+		// 1. check for self-assignment (and NOTHING else) to avoid things like:
+		// Employee employee1;
+		// employee1 = employee1;
 		if (this != &src) {
 			// 2. clean up (deallocate previously allocated dynamic memory)
 			delete[] m_noOfHoursWorkedPerDay;
