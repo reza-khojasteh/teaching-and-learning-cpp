@@ -64,13 +64,17 @@ namespace seneca {
 		return *this;
 	}
 
+	// extraction operator overload
 	istream& operator>>(istream& is, Employee& e) {
 		e.read(is);
+		// return the input stream so that we can chain the extraction operator
 		return is;
 	}
 
+	// insertion operator overload
 	ostream& operator<<(ostream& os, const Employee& e) {
 		e.print(os);
+		// return the output stream so that we can chain the insertion operator
 		return os;
 	}
 }
