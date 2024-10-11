@@ -27,7 +27,7 @@ namespace seneca {
 			os << endl << "Employee object is empty" << endl;
 		else {
 			os.setf(ios::fixed);
-			os.widen(10);
+			os.width(10);
 
 			os << endl << "Employee ID: " << m_ID << endl
 			<< "Employee Name: " << m_fName << " " << m_lName << endl;
