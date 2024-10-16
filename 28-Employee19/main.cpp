@@ -5,12 +5,12 @@ using namespace std;
 using namespace seneca;
 
 int main() {
-	// Let's first create an Employee object
-	Employee employee1;
-	// And now let's read the data for the object
-	cin >> employee1;
-	// And now let's print the data for the object
-	cout << employee1;
+	// Let's first create two Employee objects
+	Employee employee1, employee2;
+	// And now let's read the data for those objects
+	cin >> employee1 >> employee2;
+	// And now let's print the data for them
+	cout << employee1 << employee2;
 
 	return 0;
 }
