@@ -43,7 +43,7 @@ int getPositiveInteger(int max) {
 		else
 			keepreading = false;
 	} while (keepreading);
-	// Return the value
+	// Return the exoected value
 	return value;
 }
 // Now, we test the function...
