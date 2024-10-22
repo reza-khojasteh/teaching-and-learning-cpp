@@ -27,6 +27,7 @@ int getPositiveInteger(int max) {
 		}
 		// Check for invalid range
 		else if (value <= 0 || value > max) {
+			// Print the corresponding error message
 			cerr << value << " is outside the range [1," <<
 				max << ']' << endl;
 			cerr << "Invalid input! Try Again..." << endl;
