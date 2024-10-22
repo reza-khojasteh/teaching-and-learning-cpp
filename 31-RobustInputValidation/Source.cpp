@@ -35,6 +35,7 @@ int getPositiveInteger(int max) {
 			cin.ignore(2000, '\n');
 		}
 		// You may choose to omit this branch
+		// (this is basically checking to see that the user has pressed enter after the correct number!)
 		else if (char(cin.get()) != '\n') {
 			cerr << "Trailing characters! Try Again..." << endl;
 			// Clear the input buffer
