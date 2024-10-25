@@ -10,7 +10,7 @@ int getPositiveInteger(int max) {
 	// The value to be returned
 	int value;
 	// A flag to control the loop
-	bool keepreading;
+	bool keepReading;
 	// Initially, keepreading is true
 	keepreading = true;
 	// The loop continues until a valid input is entered
