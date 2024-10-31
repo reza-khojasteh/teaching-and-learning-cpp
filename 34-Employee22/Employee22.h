@@ -16,7 +16,7 @@ namespace seneca {
 		Employee(long, const char*, const char*);
 		// Base class getters (one at the time)
 		const Employee& print(std::ostream&) const;
-		// Base class setters(one at the time)
+		// Base class setters (one at the time)
 		Employee& read(std::istream&);
 		// Base class destructor (just to show the order once run)
 		~Employee();
