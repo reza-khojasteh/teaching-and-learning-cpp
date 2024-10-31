@@ -13,18 +13,20 @@ namespace seneca {
 		Employee();
 		Employee(long);
 		Employee(long, const char*, const char*);
-		// Getter/query/accessor function (we are adding std::ostream& as a parameter)
+		// Setter/mutator function
 		Employee& read(std::istream&);
 	// Introducing protected access modifier
 	// The keyword protected limits access to members of a derived class.
-	// Any member function of a derived class may access any protected or public member of its base class.
-	// What if we had declared print to be protected?
+	// Any member function of a derived class may access 
+	// any protected or public member of its base class.
+	// What if we had declared print to be protected this time (instead of public)?
 	protected:
 		const Employee& print(std::ostream&) const;
 	};
 	// Helper functions
 	std::istream& operator>>(std::istream&, Employee&);
 	// We can't have the following this time, because of using protected!
+	// Look at the corresponding cpp file and try to justify why!
 	//std::ostream& operator<<(std::ostream&, const Employee&);
 
 	// Derived class
@@ -43,7 +45,7 @@ namespace seneca {
 		HourlyBasedEmployee& setHourlyRate(double);
 		// And now, we have to declare a print function for the derived class to call the print in the base!
 		// Granting protected access to any data member exposes that member to potential corruption and is considered poor design.
-		// A protected read - only query is a preferable alternative to protected access to a data member.
+		// A protected read-only query is a preferable alternative to protected access to a data member.
 		// The query below does not allow any modification of the value in the data member.
 		// Note that this is considering an override for the print function in the base class
 		// (It actually shadows over that!)
