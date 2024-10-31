@@ -16,13 +16,13 @@ int main() {
 
 	derived.read(cin);
 	// But the following is ok, because print has been overridden in the derived class:
-	derived.print(cout);	
+	derived.print(cout);
 
 	cout << endl;
 
 	// We can also say:
 	derived.setHourlyRate(50).setNoOfHorsWorked(40);
-	cout << derived.getHourlyRate() << " " << derived.getNoOfHorsWorked();
+	derived.print(cout);
 	// But it's obvious we can't do the above for the base (because these are specific to the derived!)
 
 	return 0;
