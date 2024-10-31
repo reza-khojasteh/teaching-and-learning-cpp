@@ -16,8 +16,8 @@ int main() {
 
 	cout << endl;
 
-	// And we can say the same for the derived!
-	// The reason is any derived obj. "is a" base obj (because of inheritance!)
+	// And we can also say the same for the derived Employee object!
+	// The reason is any derived obj. "is a" base obj. (because of inheritance!)
 	derived.read(cin);
 	derived.print(cout);	
 
