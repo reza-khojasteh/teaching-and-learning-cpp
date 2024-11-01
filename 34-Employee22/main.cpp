@@ -15,7 +15,7 @@ int main() {
 	// Can you explain/justify what you see?
 	
 	// Finally, can you explain/justify what you see as the outcome of next statement?
-	cout << derived;
+	cout << derived; // ==> operstor<<(cout, derived) which results in printing just the base part of the derived object!
 	
 	return 0;
 }

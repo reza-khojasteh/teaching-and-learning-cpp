@@ -89,13 +89,13 @@ namespace seneca {
 	}
 
 	// Now, we define the constructors for the derived class:
-	HourlyBasedEmployee::HourlyBasedEmployee() {
+	HourlyBasedEmployee::HourlyBasedEmployee() { // ==> HourlyBasedEmployee::HourlyBasedEmployee() : Employee()
 		cout << "Derived class no-arg constructor is called..." << endl;
 		setNoOfHorsWorked(0.0);
 		setHourlyRate(0.0);
 	}
 
-	HourlyBasedEmployee::HourlyBasedEmployee(long id) {
+	HourlyBasedEmployee::HourlyBasedEmployee(long id) : Employee(id) {
 		cout << "Derived class one-arg constructor is called..." << endl;
 		setNoOfHorsWorked(0.0);
 		setHourlyRate(0.0);
