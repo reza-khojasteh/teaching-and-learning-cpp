@@ -13,7 +13,7 @@ namespace seneca {
 		strcpy(m_lName, lName);
 	}
 
-	const Employee& Employee::print(ostream& os) const {
+	void Employee::print(ostream& os) const {
 		if (m_ID == 0 && m_fName[0] == '\0' && m_lName[0] == '\0')
 			os << endl << "Employee object is empty" << endl;
 		else {
@@ -25,8 +25,6 @@ namespace seneca {
 
 			os.unsetf(ios::fixed);
 		}
-
-		return *this;
 	}
 
 	// This constructor calls the base class's constructor, 
@@ -56,16 +54,14 @@ namespace seneca {
 		return *this;
 	}
 
-	const HourlyBasedEmployee& HourlyBasedEmployee::print(std::ostream& os) const {
+	void HourlyBasedEmployee::print(std::ostream& os) const {
 		Employee::print(os);
 
 		os << "Employee Number Of Hours Worked: " << m_noOfHoursWorked << endl
 			<< "Employee Hourly Rate: " << m_hourlyRate << endl;
-
-		return *this;
 	}
 	// Here, we provide a body to the pure virtual function (as the contract we have with the interface!)
-	// If we don't do the follwing, the derived class will also be/remain as an abstract one!
+	// If we don't do the following, the derived class will also be/remain as an abstract one!
 	double HourlyBasedEmployee::calculateSalary() {
 		return getNoOfHorsWorked() * getHourlyRate();
 	}
@@ -87,12 +83,10 @@ namespace seneca {
 		return *this;
 	}
 
-	const SalaryBasedEmployee& SalaryBasedEmployee::print(std::ostream& os) const {
+	void SalaryBasedEmployee::print(std::ostream& os) const {
 		Employee::print(os);
 
 		os << "Employee Monthly Salary: " << m_monthlySalary << endl;
-
-		return *this;
 	}
 	// Here, we provide a body to the pure virtual function (as the contract we have with the interface!)
 	// If we don't do the following, the derived class will also be/remain as an abstract one!

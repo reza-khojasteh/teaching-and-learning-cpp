@@ -6,7 +6,7 @@ namespace seneca {
 	class iEmployee {
 	public:
 		virtual double calculateSalary() = 0;
-		virtual const iEmployee& print(std::ostream&) const = 0;
+		virtual void print(std::ostream&) const = 0;
 	};
 	// An Abstract Base class/interface
 	class Employee : public iEmployee {
@@ -21,7 +21,7 @@ namespace seneca {
 		Employee(long, const char*, const char*);
 		// Base class getter now gives an implementation to one of the pure virtual functions
 		// (note that the keyword "virtual" is not necessary here)
-		const Employee& print(std::ostream&) const;
+		void print(std::ostream&) const;
 		// As this class inherits the pure virtual member function from the interface,
 		// it does not even need to be mentioned here!
 		//virtual double calculateSalary() = 0;
@@ -40,7 +40,7 @@ namespace seneca {
 		double getNoOfHorsWorked() const;
 		double getHourlyRate() const;
 		// Derived class print method (note that the keyword "virtual" is not necessary here)
-		const HourlyBasedEmployee& print(std::ostream&) const;
+		void print(std::ostream&) const;
 		// Derived class setters
 		HourlyBasedEmployee& setNoOfHorsWorked(double);
 		HourlyBasedEmployee& setHourlyRate(double);
@@ -61,7 +61,7 @@ namespace seneca {
 		// Derived class getters
 		double getMonthlySalary() const;
 		// Derived class print method (note that the keyword "virtual" is not necessary here)
-		const SalaryBasedEmployee& print(std::ostream&) const;
+		void print(std::ostream&) const;
 		// Derived class setter
 		SalaryBasedEmployee& setMonthlySalary(double);
 		// In this class, we intend to provide some implementation for the following member function 
