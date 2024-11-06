@@ -13,7 +13,7 @@ int main() {
 	// Not only that but also, we can print that object and even
 	// calculate its salary!
 	derived.print(cout);
-	cout << "This employee gets a salary of $" << derived.calculateSalary() << "." << endl;
+	cout << "This employee gets a salary of $" << derived.calculateSalary() << " this month." << endl;
 
 	return 0;
 }
