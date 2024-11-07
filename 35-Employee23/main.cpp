@@ -13,14 +13,16 @@ void display(const Employee& emp) {
 
 int main() {
 	// First, let's create an object of the base class and an object of the derived class
-	Employee base(1, "Jane", "Doe");
-	HourlyBasedEmployee derived(2, "John", "Doe", 43.5, 50.0);
+	Employee base(123, "Jane", "Doe");
+	HourlyBasedEmployee derived(456, "John", "Doe", 43.5, 50.0);
 
 	base.print(cout);
-	// Shadowing the base class's print method
+	// The following call to "print" shadows the base class's print method.
+	// This is also called "overriding".
 	derived.print(cout);
-	// But here, shadowing does not happen!
-	// Instead, early binding occurs (at compile time)...
+	// But in the next two lines, shadowing does not happen!
+	// Instead, early binding occurs (at compile time).
+	// Run the code to see the effect!
 	display(base);
 	display(derived);
 
