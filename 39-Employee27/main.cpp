@@ -22,5 +22,9 @@ int main() {
 	}
 	// This gives you the polymorphism power!
 
+	// And now, you should delete the memory you had dynamically allocated:
+	for (int i = 0; i < 2; i++)
+		delete employees[i];
+
 	return 0;
 }
