@@ -69,7 +69,7 @@ namespace seneca {
 		return *this;
 	}
 	// Here, we provide a body to the pure virtual function (as the contract we have with the interface!)
-	// If we don't do the follwing, the derived class will also be/remain as an abstract one!
+	// If we don't do the following, the derived class will also be/remain as an abstract one!
 	double HourlyBasedEmployee::calculateSalary() {
 		return getNoOfHorsWorked() * getHourlyRate();
 	}
