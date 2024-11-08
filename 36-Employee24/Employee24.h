@@ -33,7 +33,7 @@ namespace seneca {
 		double getNoOfHorsWorked() const;
 		double getHourlyRate() const;
 		// Derived class print method (note that the keyword "virtual" is not necessary here)
-		const HourlyBasedEmployee& print(std::ostream&) const;
+		/*virtual*/const HourlyBasedEmployee& print(std::ostream&) const;
 		// Derived class setters
 		HourlyBasedEmployee& setNoOfHorsWorked(double);
 		HourlyBasedEmployee& setHourlyRate(double);

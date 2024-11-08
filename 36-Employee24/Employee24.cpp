@@ -66,7 +66,7 @@ namespace seneca {
 		setHourlyRate(hourlyRate);
 	}
 
-	// And now, the implmentations for the derived class member functions:
+	// And now, the implementations for the derived class member functions:
 	double HourlyBasedEmployee::getNoOfHorsWorked() const {
 		return m_noOfHoursWorked;
 	}
