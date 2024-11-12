@@ -17,10 +17,10 @@ int main() {
 	// based on different dynamic types at run-time!
 	for (int i = 0; i < 2; i++)
 	{
+		// This gives you the polymorphism power:
 		employees[i]->print(cout);
 		cout << "This employee gets a salary of $" << employees[i]->calculateSalary() << " this month." << endl;
 	}
-	// This gives you the polymorphism power!
 
 	// And now, you should delete the memory you had dynamically allocated:
 	for (int i = 0; i < 2; i++)
