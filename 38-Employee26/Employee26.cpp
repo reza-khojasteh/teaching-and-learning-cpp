@@ -37,12 +37,12 @@ namespace seneca {
 	// and then, does the initializations for the specific parts
 	HourlyBasedEmployee::HourlyBasedEmployee(long id, const char* fName, const char* lName, double noOfHoursWorked, double hourlyRate)
 		: Employee(id, fName, lName) {
-		setNoOfHorsWorked(noOfHoursWorked);
+		setNoOfHoursWorked(noOfHoursWorked);
 		setHourlyRate(hourlyRate);
 	}
 
 	// And now, the implementations for the derived class member functions:
-	double HourlyBasedEmployee::getNoOfHorsWorked() const {
+	double HourlyBasedEmployee::getNoOfHoursWorked() const {
 		return m_noOfHoursWorked;
 	}
 
@@ -50,7 +50,7 @@ namespace seneca {
 		return m_hourlyRate;
 	}
 
-	HourlyBasedEmployee& HourlyBasedEmployee::setNoOfHorsWorked(double noOfHoursWorked) {
+	HourlyBasedEmployee& HourlyBasedEmployee::setNoOfHoursWorked(double noOfHoursWorked) {
 		m_noOfHoursWorked = noOfHoursWorked;
 		return *this;
 	}
@@ -71,6 +71,6 @@ namespace seneca {
 	// Here, we provide a body to the pure virtual function (as the contract we have with the interface!)
 	// If we don't do the following, the derived class will also be/remain as an abstract one!
 	double HourlyBasedEmployee::calculateSalary() {
-		return getNoOfHorsWorked() * getHourlyRate();
+		return getNoOfHoursWorked() * getHourlyRate();
 	}
 }

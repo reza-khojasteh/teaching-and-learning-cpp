@@ -33,12 +33,12 @@ namespace seneca {
 		// Derived class constructor
 		HourlyBasedEmployee(long, const char*, const char*, double, double);
 		// Derived class getters
-		double getNoOfHorsWorked() const;
+		double getNoOfHoursWorked() const;
 		double getHourlyRate() const;
 		// Derived class print method (note that the keyword "virtual" is not necessary here)
 		const HourlyBasedEmployee& print(std::ostream&) const;
 		// Derived class setters
-		HourlyBasedEmployee& setNoOfHorsWorked(double);
+		HourlyBasedEmployee& setNoOfHoursWorked(double);
 		HourlyBasedEmployee& setHourlyRate(double);
 		// In this class, we intend to provide some implementation for the following member function 
 		// (because we can!) so that this class is no longer abstract (now, it's called concrete!)
