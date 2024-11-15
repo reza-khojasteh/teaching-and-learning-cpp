@@ -41,7 +41,7 @@ namespace seneca {
 		// Assignment operator overload
 		HourlyBasedEmployee& operator=(const HourlyBasedEmployee&);
 
-		// Derived class destructor
+		// Derived class destructor, we need it here because we have used DMA
 		~HourlyBasedEmployee();
 	};
 }
