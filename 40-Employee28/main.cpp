@@ -16,7 +16,7 @@ int main() {
 	employee2.print();
 
 	// Now, let's create a second HourlyBasedEmployee object and copy the first object into it.
-	HourlyBasedEmployee employee3 = employee2; // calls copy constructor
+	HourlyBasedEmployee employee3 = employee2; // calls copy constructor because we are initializing a new object
 	employee3.print();
 
 	HourlyBasedEmployee employee4; // calls default/no-arg constructor
