@@ -21,7 +21,7 @@ int main() {
 
 	// Then, let's create a third HourlyBasedEmployee object and assign the second object into it.
 	HourlyBasedEmployee employee4; // calls default/no-arg constructor
-	employee4 = employee3; // calls copy assignment operator
+	employee4 = employee3; // calls copy assignment operator because we are assigning to an existing object
 	employee4.print();
 
 	return 0;
