@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5a22267f-1755-415c-9847-35ac428ecfd9}</ProjectGuid>
-    <RootNamespace>Types</RootNamespace>
+    <ProjectGuid>{6a97893a-a2dd-4926-bd0e-9cbb993f01f0}</ProjectGuid>
+    <RootNamespace>My3typesincpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
