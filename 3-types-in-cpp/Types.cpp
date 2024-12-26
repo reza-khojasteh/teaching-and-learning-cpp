@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// A simple program to demonstrate the different types in C++
 int main() {
 	//create variables of different types
 	bool b = true;
