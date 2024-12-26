@@ -38,7 +38,7 @@ int main() {
 	cout << "value of long double: " << ld << endl;
 	cout << endl;
 
-	//create a boolean variable
+	//create a boolean variable and use it in an if statement
 	bool flag = false;
 
 	if (flag) {
