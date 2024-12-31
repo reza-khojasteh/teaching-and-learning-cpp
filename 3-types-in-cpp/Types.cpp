@@ -56,7 +56,7 @@ int main() {
 		cout << "the flag is false!" << endl;
 	}
 
-	//assign a number to a boolean variable
+	//assign a number to a boolean variable and print it
 	flag = 0;
 	cout << flag << endl;
 
