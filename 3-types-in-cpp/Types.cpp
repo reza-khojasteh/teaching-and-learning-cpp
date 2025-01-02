@@ -3,7 +3,7 @@ using namespace std;
 
 // A simple program to demonstrate the different types in C++
 int main() {
-	//create variables of different types
+	// Create variables of different types
 	bool b = true;
 	char c = 'a';
 	short s = 1;
@@ -14,7 +14,7 @@ int main() {
 	double d = 5.0;
 	long double ld = 6.0;
 
-	//print the sizes of the variables
+	// Print the sizes of the variables
 	cout << "size of bool: " << sizeof(b) << endl;
 	cout << "size of char: " << sizeof(c) << endl;
 	cout << "size of short: " << sizeof(s) << endl;
@@ -26,7 +26,7 @@ int main() {
 	cout << "size of long double: " << sizeof(ld) << endl;
 	cout << endl;
 
-	//print the values of the variables
+	// Print the values of the variables
 	cout << "value of bool: " << b << endl;
 	cout << "value of char: " << c << endl;
 	cout << "value of short: " << s << endl;
@@ -38,7 +38,7 @@ int main() {
 	cout << "value of long double: " << ld << endl;
 	cout << endl;
 
-	//create a boolean variable and use it in an if statement
+	// Create a boolean variable and use it in an if statement
 	bool flag = false;
 
 	if (flag) {
@@ -56,7 +56,7 @@ int main() {
 		cout << "the flag is false!" << endl;
 	}
 
-	//assign a number to a boolean variable and print it
+	// Assign a number to a boolean variable and print it
 	flag = 0;
 	cout << flag << endl;
 
