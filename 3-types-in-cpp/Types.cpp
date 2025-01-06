@@ -3,7 +3,7 @@ using namespace std;
 
 // A simple program to demonstrate the different types in C++
 int main() {
-	// Create variables of different types
+	// Create variables of different types in C++
 	bool b = true;
 	char c = 'a';
 	short s = 1;
