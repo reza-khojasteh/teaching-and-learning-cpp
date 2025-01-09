@@ -14,7 +14,7 @@ int main() {
 	double d = 5.0;
 	long double ld = 6.0;
 
-	// Print the sizes of the variables
+	// Print the sizes of those variables
 	cout << "size of bool: " << sizeof(b) << endl;
 	cout << "size of char: " << sizeof(c) << endl;
 	cout << "size of short: " << sizeof(s) << endl;
