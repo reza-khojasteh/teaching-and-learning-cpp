@@ -33,7 +33,7 @@ int main() {
 	}
 
 	// delete the memory
-	delete[] dma;
+	delete[] dma; // Be careful not to forget the square brackets!
 	// set the pointer to nullptr (as a best practice)
 	dma = nullptr;
 
