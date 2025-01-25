@@ -7,7 +7,7 @@ using namespace std;
 #include "Employee5.h"
 
 namespace seneca {
-	// The following (default) constructor (which takes no arguments) initializes the members of the class to an empty state
+	// The following (no-argument) constructor initializes the members of the class to an empty state
 	// If we don't declare a constructor in the class definition, 
 	// the compiler inserts a default no-argument constructor with an empty body 
 	// which leaves the instance variables uninitialized!
