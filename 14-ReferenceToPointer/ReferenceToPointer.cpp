@@ -1,5 +1,5 @@
 // In this code, the "changePointer" function takes a pointer to a 
-// character array as an argument. Inside the function, 
+// character as an argument. Inside the function, 
 // a new memory location is allocated and the pointer is made to point 
 // to this new memory location.
 // However, the original pointer in the "main" function remains unchanged.
