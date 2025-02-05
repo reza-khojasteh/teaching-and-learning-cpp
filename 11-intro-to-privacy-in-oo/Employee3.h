@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE3_H_
+#define SENECA_EMPLOYEE3_H_
 namespace seneca {
 	// Employee structure
 	// By default, all members in a C++ struct are public, unless specified otherwise!
@@ -19,4 +19,4 @@ namespace seneca {
 		void print() const;
 	};
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE3_H_
