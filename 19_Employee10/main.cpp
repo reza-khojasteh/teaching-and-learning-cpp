@@ -8,9 +8,9 @@ int main() {
 	employee1.print();
 	// Add an hour to the number of hours worked by employee1
 	// First increment using the prefix operator and then print
-	(++employee1).print();
+	(++employee1).print();// => employee1.operator++().print(); => operator++(employee1).print();
 	// And then increment using the postfix operator and then print
-	(employee1++).print();
+	(employee1++).print();// => employee1.operator++(0).print(); => operator++(employee1, 0).print();
 	// Print the object after the incrementation
 	employee1.print();
 
