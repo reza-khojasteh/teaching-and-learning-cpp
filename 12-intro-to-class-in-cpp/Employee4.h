@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE4_H_
+#define SENECA_EMPLOYEE4_H_
 namespace seneca {
 	// Employee class
 	// It will be a better practice to use a class 
@@ -33,4 +33,4 @@ namespace seneca {
 	// can change the object through the reference.
 	void setEmployee(Employee&, long, const char*, const char*);
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE4_H_
