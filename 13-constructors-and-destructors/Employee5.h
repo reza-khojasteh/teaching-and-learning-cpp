@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE5_H_
+#define SENECA_EMPLOYEE5_H_
 namespace seneca {
 	// Employee class
 	// It will be a good practice to define a constructor for the class to initialize the members of the class.
@@ -27,4 +27,4 @@ namespace seneca {
 		~Employee();
 	};
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE5_H_
