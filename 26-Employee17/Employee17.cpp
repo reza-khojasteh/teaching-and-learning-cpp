@@ -27,9 +27,11 @@ namespace seneca {
 	}
 	
 	// The copy constructor contains the logic for copying from a source object to a newly created object of the same type.
-	// The copy constructor is called when a new object is created and initialized with an existing object.
+	// The copy constructor is called when a new object is initialized from another (existing) object.
 	// The copy constructor is called when an object is passed by value to a function.
-	// The copy constructor is called when an object is returned by value from a function.
+	// The copy constructor is called when an object is returned by value from a function 
+	// (although some modern compilers may optimize this last one by eliminating the call to the copy constructor!
+	// This is called RVO which stands for Return Value Optimization).
 	Employee::Employee(const Employee& src) {
 		// Shallow copies
 		m_ID = src.m_ID;
@@ -62,9 +64,7 @@ namespace seneca {
 	}
 
 	// The assignment operator overload contains the logic for copying from a source object to a destination object of the same type.
-	// The assignment operator overload is called when an object is assigned to another object.
-	// The assignment operator overload is called when an object is passed by reference to a function.
-	// The assignment operator overload is called when an object is returned by reference from a function.
+	// The assignment operator overload is called when you assign an already-existing object to another.
 	Employee& Employee::operator=(const Employee& src) {
 		// 1. check for self-assignment (and NOTHING else) to avoid things like:
 		// Employee employee1;
