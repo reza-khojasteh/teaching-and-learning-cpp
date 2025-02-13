@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{cd8f266b-98ed-4f92-ace1-b64017014aff}</ProjectGuid>
-    <RootNamespace>My14ReferenceToPointer</RootNamespace>
+    <ProjectGuid>{f3615895-4037-48fa-bbb1-1a741c94869b}</ProjectGuid>
+    <RootNamespace>My14pointerreferenceincpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
