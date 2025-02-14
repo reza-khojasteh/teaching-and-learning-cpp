@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE6_H_
+#define SENECA_EMPLOYEE6_H_
 namespace seneca {
 	class Employee {
 	private:
@@ -18,4 +18,4 @@ namespace seneca {
 		~Employee(/*Employee* this*/);
 	};
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE6_H_
