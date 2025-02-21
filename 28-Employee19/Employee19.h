@@ -4,6 +4,7 @@
 namespace seneca {
 	class Employee {
 	private:
+		// Data members
 		long m_ID{};
 		char m_fName[41]{};
 		char m_lName[41]{};
