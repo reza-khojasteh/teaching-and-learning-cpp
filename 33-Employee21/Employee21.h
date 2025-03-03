@@ -47,8 +47,7 @@ namespace seneca {
 		// Granting protected access to any data member exposes that member to potential corruption and is considered poor design.
 		// A protected read-only query is a preferable alternative to protected access to a data member.
 		// The query below does not allow any modification of the value in the data member.
-		// Note that this is considering an override for the print function in the base class
-		// (It actually shadows over that!)
+		// Note that this is considered as a shadow over the print function in the base class!
 		const HourlyBasedEmployee& print(std::ostream&) const;
 	};
 }
