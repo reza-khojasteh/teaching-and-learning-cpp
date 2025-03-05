@@ -18,7 +18,6 @@ int main() {
 
 	base.print(cout);
 	// The following call to "print" shadows the base class's print method.
-	// This is also called "overriding".
 	derived.print(cout);
 	// But in the next two lines, shadowing does not happen!
 	// Instead, early binding occurs (at compile time).
