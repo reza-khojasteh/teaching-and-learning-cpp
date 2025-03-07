@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a4bdfd4b-7684-4643-ab74-b44f4c506c26}</ProjectGuid>
-    <RootNamespace>My18Employee9</RootNamespace>
+    <ProjectGuid>{3a276ef7-a050-4a67-a0f7-504f0b064ba5}</ProjectGuid>
+    <RootNamespace>My18prefixincrementoperatoroverload</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Employee9.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="Employee9.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Employee9.h" />
+    <ClCompile Include="Employee9.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
