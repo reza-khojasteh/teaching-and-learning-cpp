@@ -31,6 +31,10 @@ namespace seneca {
 		*this = HourlyBasedEmployee(0, "", "", 0, nullptr);
 	}
 
+	// The constructor of the derived class calls the constructor of the base class.
+	// The constructor of the base class is called before the constructor of the derived class 
+	// and does the initialization of the base class members (which is all shallow copy).
+	// The constructor of the derived class initializes the derived class members, which can include deep copies.
 	HourlyBasedEmployee::HourlyBasedEmployee(long id, const char* fName, const char* lName,
 		int noOfDaysWorked, int* noOfHoursWorkedPerDay) : Employee(id, fName, lName) {
 		m_noOfDaysWorked = noOfDaysWorked;
@@ -66,9 +70,9 @@ namespace seneca {
 	// Here, the copy constructor for the derived class calls the base class's (default) copy constructor,
 	// and then performs the deep copies (needed here because of the DMA), itself :
 	HourlyBasedEmployee::HourlyBasedEmployee(const HourlyBasedEmployee& src) : Employee(src) {
-		// Shallow copies (remained which should be done here in the derived class):
+		// Shallow copies (remained which should be done here in the derived class, we have just one in this derived class):
 		m_noOfDaysWorked = src.m_noOfDaysWorked;
-		// Deep copies:
+		// Deep copies (we have just one in this derived class):
 		if (src.m_noOfHoursWorkedPerDay != nullptr) {
 			m_noOfHoursWorkedPerDay = new int[m_noOfDaysWorked];
 			for (int i = 0; i < m_noOfDaysWorked; i++)
@@ -80,9 +84,7 @@ namespace seneca {
 
 
 	// The assignment operator overload contains the logic for copying from a source object to a destination object of the same type.
-	// The assignment operator overload is called when an object is assigned to another object.
-	// The assignment operator overload is called when an object is passed by reference to a function.
-	// The assignment operator overload is called when an object is returned by reference from a function.
+	// The assignment operator overload is called when you assign an already-existing object to another.
 	// The default copy assignment operator of a derived class calls the copy assignment operator of its base class.
 	// However, any custom copy assignment operator of a derived class DOES NOT by default call the copy assignment operator
 	// of its base class. Accordingly, a custom copy assignment operator of a derived class with a resource
