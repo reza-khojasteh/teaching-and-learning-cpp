@@ -37,8 +37,8 @@ namespace seneca {
 	// The constructor of the derived class initializes the derived class members, which can include deep copies.
 	HourlyBasedEmployee::HourlyBasedEmployee(long id, const char* fName, const char* lName,
 		int noOfDaysWorked, int* noOfHoursWorkedPerDay) : Employee(id, fName, lName) {
-		m_noOfDaysWorked = noOfDaysWorked;
-		m_noOfHoursWorkedPerDay = new int[m_noOfDaysWorked];
+		m_noOfDaysWorked = noOfDaysWorked; // shallow copy
+		m_noOfHoursWorkedPerDay = new int[m_noOfDaysWorked]; // deep copy
 		for (int i = 0; i < m_noOfDaysWorked; i++)
 			m_noOfHoursWorkedPerDay[i] = noOfHoursWorkedPerDay[i];
 	}
