@@ -62,7 +62,7 @@ namespace seneca {
 		: Employee(id, fName, lName) {
 		// And then, initialize the specific/derived class data members directly here...
 		// (this could also be considered as another use case of code reuse in inheritance!)
-		setNoOfHorsWorked(noOfHoursWorked);
+		setNoOfHorsWorked(noOfHoursWorked);//m_noOfHoursWorked = noOfHoursWorked;
 		setHourlyRate(hourlyRate);
 	}
 
