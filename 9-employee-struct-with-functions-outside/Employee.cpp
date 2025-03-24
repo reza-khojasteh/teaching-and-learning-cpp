@@ -4,7 +4,7 @@
 using namespace std;
 #include <cstring>
 
-#include "Employee1.h"
+#include "Employee.h"
 
 namespace seneca {
 	// Function definitions

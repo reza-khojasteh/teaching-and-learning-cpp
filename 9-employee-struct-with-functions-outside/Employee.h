@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE_H_
+#define SENECA_EMPLOYEE_H_
 namespace seneca {
 	// Employee structure
 	struct Employee {
@@ -11,4 +11,4 @@ namespace seneca {
 	void setEmployee(Employee*, long, const char*, const char*);
 	void printEmployee(const Employee*);
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE_H_

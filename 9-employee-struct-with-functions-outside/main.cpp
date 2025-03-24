@@ -1,4 +1,4 @@
-#include "Employee1.h"
+#include "Employee.h"
 using namespace seneca;
 
 int main() {
