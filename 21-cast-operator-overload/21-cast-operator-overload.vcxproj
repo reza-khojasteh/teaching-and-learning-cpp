@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6ae207a9-6f55-4e09-869b-d3ed24546fe1}</ProjectGuid>
-    <RootNamespace>My21Employee12</RootNamespace>
+    <ProjectGuid>{c9703df6-1a18-4f9b-9470-cf64e12c936f}</ProjectGuid>
+    <RootNamespace>My21castoperatoroverload</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
