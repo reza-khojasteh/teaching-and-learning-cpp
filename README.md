@@ -1,4 +1,4 @@
-# Object Oriented Using C++ Learning Projects
+# Object-Oriented Programming Using C++ Learning Projects
 
 This repository contains a collection of C++ projects created for learning purposes. Each project is designed to demonstrate a specific C++ concept.
 
