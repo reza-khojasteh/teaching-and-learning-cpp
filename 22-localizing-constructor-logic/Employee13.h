@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE13_H_
+#define SENECA_EMPLOYEE13_H_
 namespace seneca {
 	class Employee {
 	private:
@@ -28,4 +28,4 @@ namespace seneca {
 		// Since we have no resources to release, we don't need a destructor...
 	};
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE13_H_
