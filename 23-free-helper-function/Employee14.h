@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE14_H_
+#define SENECA_EMPLOYEE14_H_
 namespace seneca {
 	class Employee {
 	private:
@@ -45,4 +45,4 @@ namespace seneca {
 	// we have to add new member functions to support the helper function!
 	bool areTheSame(const Employee&, const Employee&);
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE14_H_
