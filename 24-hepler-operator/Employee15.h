@@ -1,5 +1,5 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE15_H_
+#define SENECA_EMPLOYEE15_H_
 namespace seneca {
 	class Employee {
 	private:
@@ -46,4 +46,4 @@ namespace seneca {
 	// Now, For symmetry, we overload the addition operator for identical operand types but in reverse order.
 	Employee operator+(int, const Employee&);
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE15_H_
