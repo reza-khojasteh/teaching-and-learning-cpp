@@ -36,7 +36,7 @@ Here is a list of the projects in this repository and the topics they cover:
 * **19-postfix-increment-operator-overload**: Overloading the postfix increment operator.
 * **20-type-conversion-operator-overload**: Overloading the type conversion operator.
 * **21-cast-operator-overload**: Overloading the cast operator.
-* **22-Employee13**: Employee project 13.
+* **22-localizing-constructor-logic**: Using temporary objects to access validation logic localized within one constructor.
 * **23-Employee14**: Employee project 14.
 * **24-Employee15**: Employee project 15.
 * **25-Employee16**: Employee project 16.
