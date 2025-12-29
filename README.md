@@ -39,7 +39,7 @@ Here is a list of the projects in this repository and the topics they cover:
 * **22-localizing-constructor-logic**: Using temporary objects to access validation logic localized within one constructor.
 * **23-free-helper-function**: Employee project 14.
 * **24-helper-operator**: Employee project 15.
-* **25-Employee16**: Employee project 16.
+* **25-friend-function**: Employee project 16.
 * **26-Employee17**: Employee project 17.
 * **27-Employee18**: Employee project 18.
 * **28-Employee19**: Employee project 19.
