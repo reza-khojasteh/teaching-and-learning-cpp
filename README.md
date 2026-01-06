@@ -38,7 +38,7 @@ Here is a list of the projects in this repository and the topics they cover:
 * **21-cast-operator-overload**: Overloading the cast operator.
 * **22-localizing-constructor-logic**: Using temporary objects to access validation logic localized within one constructor.
 * **23-free-helper-function**: Introducing a function that obtains all of its information from the public member functions of the class that it supports.
-* **24-helper-operator**: Employee project 15.
+* **24-helper-operator**: Helper operators as global functions that overload operators.
 * **25-friend-function**: Employee project 16.
 * **26-Employee17**: Employee project 17.
 * **27-Employee18**: Employee project 18.
