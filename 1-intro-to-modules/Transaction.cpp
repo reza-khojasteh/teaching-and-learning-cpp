@@ -17,7 +17,7 @@ using namespace std;
 void enter(Transaction* tr) {
 	// prompt for and accept the transaction data
     cout << "Enter the account number : ";
-    cin >> tr->acct;
+	cin >> tr->acct;// Or cin >> (*tr).acct;
     cout << "Enter the account type (d debit, c credit) : ";
     cin >> tr->type;
     cout << "Enter the account amount : ";
