@@ -12,7 +12,7 @@ int getPositiveInteger(int max) {
 	// A flag to control the loop
 	bool keepReading;
 	// Initially, keepreading is true
-	keepreading = true;
+	keepReading = true;
 	// The loop continues until a valid input is entered
 	do {
 		cout << "Enter a positive integer (<= " << max << ") : ";
@@ -44,8 +44,8 @@ int getPositiveInteger(int max) {
 		}
 		// If the input is valid, keepreading is set to false and we exit the loop
 		else
-			keepreading = false;
-	} while (keepreading);
+			keepReading = false;
+	} while (keepReading);
 	// Return the exoected value
 	return value;
 }
