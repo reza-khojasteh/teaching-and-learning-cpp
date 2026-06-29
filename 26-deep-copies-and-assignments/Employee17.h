@@ -1,12 +1,12 @@
-#ifndef SENECA_EMPLOYEE1_H_
-#define SENECA_EMPLOYEE1_H_
+#ifndef SENECA_EMPLOYEE17_H_
+#define SENECA_EMPLOYEE17_H_
 namespace seneca {
 	class Employee {
 	private:
 		long m_ID{};
 		char m_fName[41]{};
 		char m_lName[41]{};
-		// We have added a new data member to express the number of hours worked by an employee.
+		// We have added a new data member to express the number of days worked by an employee.
 		int m_noOfDaysWorked{};
 		// We have added a new data member to express the number of hours worked per day by an employee.
 		// Based on the defintion, it can be either an array or a pointer to an array.
@@ -21,8 +21,7 @@ namespace seneca {
 		// Copy constructor
 		Employee(const Employee&);
 
-		// Getter/query/accessor function (we are adding all possible queries for our class this time,
-		// because we need them to support the helper function down there.)
+		// Getter/query/accessor function
 		const Employee& print() const;
 
 		// Assignment operator overload
@@ -32,4 +31,4 @@ namespace seneca {
 		~Employee();
 	};
 }
-#endif // !SENECA_EMPLOYEE1_H_
+#endif // !SENECA_EMPLOYEE17_H_

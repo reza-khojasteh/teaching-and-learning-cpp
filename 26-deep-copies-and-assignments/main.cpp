@@ -10,9 +10,14 @@ int main() {
 	Employee employee1(123456789, "John", "Doe", 5, hours);
 	employee1.print();
 
-	// And now, let's create a second Employee object and copy the first object into it.
+	// Now, let's create a second Employee object and copy the first object into it.
 	Employee employee2 = employee1;
 	employee2.print();
+
+	// Finally, let's create a third Employee object and assign the first object to it.
+	Employee employee3;
+	employee3 = employee1;
+	employee3.print();
 
 	return 0;
 }
