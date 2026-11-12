@@ -48,15 +48,15 @@ namespace seneca {
 
 		cout << "Enter Employee ID: ";
 		// read the ID from the input buffer
-		is >> m_ID;
+		is >> id;
 
 		cout << "Enter Employee First Name: ";
 		// read the first name from the input buffer
-		is >> m_fName;
+		is >> fName;
 
 		cout << "Enter Employee Last Name: ";
 		// read the last name from the input buffer
-		is >> m_lName;
+		is >> lName;
 
 		// construct a temporary Student
 		Employee temp(id, fName, lName);
